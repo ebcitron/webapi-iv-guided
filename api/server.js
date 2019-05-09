@@ -18,6 +18,8 @@ server.get('/', async (req, res) => {
   }
 });
 
+
+
 server.post('/', async (req, res) => {
   try {
     const [id] = await db('shoutouts').insert(req.body);
