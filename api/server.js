@@ -8,6 +8,7 @@ const server = express();
 server.use(helmet());
 server.use(express.json());
 
+
 server.get('/', async (req, res) => {
   try {
     const shoutouts = await db('shoutouts');
